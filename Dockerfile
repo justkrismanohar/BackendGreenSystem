@@ -18,8 +18,8 @@ RUN pip3 install --upgrade pip setuptools wheel
 RUN pip3 install -r /tmp/requirements.txt
 
 # Add our code
-#ADD ./webapp /opt/webapp/
-#WORKDIR /opt/webapp
+ADD . /opt/webapp/
+WORKDIR /opt/webapp
 
 # Expose is NOT supported by Heroku
 # EXPOSE 5000 		
