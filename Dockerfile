@@ -5,6 +5,7 @@ FROM minizinc/minizinc:latest-alpine
 RUN apk add --no-cache --update python3 py3-pip bash
 ADD ./requirements.txt /tmp/requirements.txt
 
+RUN pip3 install --upgrade pip setuptools wheel
 # Install dependencies
 RUN pip3 install -r /tmp/requirements.txt
 
