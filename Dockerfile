@@ -1,5 +1,6 @@
 #Grab the latest alpine image
-FROM minizinc/minizinc:latest-alpine
+#FROM minizinc/minizinc:latest-alpine
+FROM minizinc/minizinc:latest
 
 # Install python and pip
 RUN apk add --no-cache --update python3 py3-pip bash
