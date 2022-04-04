@@ -6,6 +6,9 @@ FROM minizinc/minizinc:latest
 #RUN apk add --no-cache --update python3 py3-pip bash
 #RUN apt-get add --no-cache --update python3 py3-pip bash
 
+RUN apt-get update
+RUN apt-get -y install python3-pip
+
 ADD ./requirements.txt /tmp/requirements.txt
 
 RUN pip3 install --upgrade pip setuptools wheel
