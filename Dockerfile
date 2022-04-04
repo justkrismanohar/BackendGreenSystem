@@ -7,7 +7,7 @@ ADD ./requirements.txt /tmp/requirements.txt
 
 RUN pip3 install --upgrade pip setuptools wheel
 
-RUN pip3 install scipy
+#RUN pip3 install scipy
 # Install dependencies
 RUN pip3 install -r /tmp/requirements.txt
 
